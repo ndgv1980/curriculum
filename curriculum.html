@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Currículum</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        .info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .info div {
+            flex: 1;
+            padding: 10px;
+            margin: 0 5px;
+            background-color: #f0f0f0;
+            border-radius: 6px;
+        }
+
+        .profile-pic {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+
+        @media screen and (max-width: 600px) {
+            .info {
+                flex-direction: column;
+            }
+
+            .profile-pic {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mi Currículum</h1>
+    </header>
+
+    <section>
+        <div style="text-align: center;">
+            <img class="profile-pic" src="./foto.jpg" alt="Foto de perfil">
+        </div>
+    </section>
+
+    <section>
+        <h2>Datos Personales</h2>
+        <div class="info">
+            <div>
+                <h3>Nombre</h3>
+                <p>Néstor García</p>
+            </div>
+            <div>
+                <h3>Correo Electrónico</h3>
+                <p>ndgv1980@gmail.com</p>
+            </div>
+            <div>
+                <h3>Teléfono</h3>
+                <p>(123) 456-7890</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Experiencia Laboral</h2>
+        <div>
+            <h3>Docente de informática</h3>
+            <p>Institución DGES - Ciudad de la Costa, Uruguay | 01/03/2006 - 01/03/2024</p>
+            <ul>
+                <li>Coach de equipo de FLL en competencias internacionales - Uruguay y USA -, 2019</li>
+                <li>Coach de equipo de Robocup, categoría Rescue Line, - Tailandia - 2022</li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>Otro Trabajo</h3>
+            <p>Instituto Thales - Sevilla, España | 2015 - 2017</p>
+            <ul>
+                <li>Docente de robótica educativa</li>
+                <li>Programa de educación a distancia</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Educación</h2>
+        <div>
+            <h3>Educación terciaria</h3>
+            <p>Universidad Galileo - Ciudad de Guatemala, Guatemala | julio/2021 - diciembre/2022</p>
+            <p>Docente de informática de educación media</p>
+        </div>
+    </section>
+</body>
+</html>
